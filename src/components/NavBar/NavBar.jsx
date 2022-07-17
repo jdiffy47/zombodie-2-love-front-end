@@ -10,7 +10,7 @@ const NavBar = ({ user, handleLogout }) => {
           <img src={Logo} alt="" id="logo" />
             {/* Welcome, {user.name} */}
             {/* <Link to="/changePassword">Change Password</Link> */}
-            <Link to="/Matches">Matches</Link>
+            <Link to="/Messages">Messages</Link>
             <Link to="/profile">Profile</Link>
             <Link to="" onClick={handleLogout}>Log Out</Link>
         </nav>
