@@ -5,9 +5,11 @@ import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
-import Button from '@mui/material/Button';
-import Typography from '@mui/material/Typography';
 import Logo from '../../assets/zombieapp-logo.png'
+import { IconButton, Typography, Button } from '@mui/material'
+import ThumbUpAltRoundedIcon from '@mui/icons-material/ThumbUpAltRounded';
+import ThumbDownRoundedIcon from '@mui/icons-material/ThumbDownRounded';
+
 
 const Profiles = () => {
   const [profiles, setProfiles] = useState([])
@@ -40,8 +42,14 @@ const Profiles = () => {
         </Typography>
       </CardContent>
       <CardActions>
-        <Button size="small">Share</Button>
-        <Button size="small">Learn More</Button>
+        <IconButton>
+          <Button size="small">
+            <ThumbUpAltRoundedIcon />
+          </Button>
+        </IconButton>
+        <Button size="small">
+          <ThumbDownRoundedIcon />
+        </Button>
       </CardActions>
     </Card>
     // <div>
